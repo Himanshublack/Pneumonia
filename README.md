@@ -4,7 +4,7 @@ This project uses a convolutional neural network (CNN) to classify chest X-rays 
 # Getting Started
 Clone the repository
 ``` 
-git clone https://github.com/naqeeb2710/X-Ray-Pneumonia-Prediction-CNN.git
+git clone https://github.com/Himanshublack/X-Ray_Pneumonia_detection
 ```  
 Change the Directory
 ``` 
@@ -26,7 +26,9 @@ Keras
 Matplotlib 
 Numpy 
 Sklearn 
-OpenCV 
+OpenCV
+Pandas
+OS
 ```
 
 # Data Preprocessing
@@ -38,12 +40,12 @@ The images are resized and normalised before being fed into the model <br/>
 The model consists of a series of convolutional, max pooling, and dense layers. Dropout layers are used to prevent overfitting.
 
 # Training and Evaluation
-The model is trained for 150 epochs with a batch size of 131. <br/>
+The model is trained for 100 epochs with a batch size of 128. <br/>
 The training dataset is used to train the model, and the test dataset is used to evaluate the performance of the model. <br/>
 The accuracy and loss are plotted to visualise the training process. <br/>
 
 # Results
-The model achieved an accuracy of 96% on the test dataset.
+The model achieved an accuracy of 96.71% on the test dataset.
 
 # Contributions
 This project is open to contributions, feel free to fork the repository and make pull requests.
