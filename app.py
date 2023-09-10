@@ -12,9 +12,9 @@ model = load_model('model.h5')
 model.make_predict_function()
 
 def predict_label(img_path):
-	i = tf.keras.preprocessing.image.load_img(img_path, target_size=(128,128))
+	i = tf.keras.preprocessing.image.load_img(img_path, target_size=(180,180))
 	i = tf.keras.preprocessing.image.img_to_array(i)/255.0
-	i = i.reshape(1, 128,128,3)
+	i = i.reshape(None, 180,180,3)
 	p = model.predict(i)
 	p=p.reshape(1)
 	if p>=0.51:
